@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <title>Celexport | Free Sample</title>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/image/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/image/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/image/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/image/favicons/site.webmanifest">
+        <link rel="mask-icon" href="/image/favicons/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="/image/favicons/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-config" content="/image/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    <body>
+
+        <div class="sticky sticky--sample">
+            <a href="#header"><img src="image/logo.png" alt="Logo" class="sticky__logo"></a>
+                
+            <nav class="sticky__nav">
+                <ul class="sticky__nav sticky__nav-ul">
+                    <li><a href="#product">PRODUCT</a></li>
+                    <li><a href="#terms">OUR TERMS</a></li>
+                    <li><a href="#about">COMPANY</a></li>
+                    <li><a href="#catalog">CATALOG</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+
+            <div class="sticky__button">
+                <a href="#" class="btn btn--main">Get a Quote</a>
+                <!-- <a href="#" class="btn btn--sub">Free Sample</a> -->
+            </div>
+        </div>
+
+        <div class="box-title margin-top-veryHigh margin-bot-med">
+            <h2>FREE SAMPLE</h2>
+        </div>
+
+        <div class="sample"><!--layouts/sample-->
+            
+            <h3>Try our product for free, and give us your feedback</h3>
+            <!-- <h4 class="heading-4 heading-4--black margin-bot-sma"><em>This service only available to Egypt at the moment. Sorry for inconvenience</em>⚠️</h4> -->
+            <h4 class="heading-4 heading-4--black margin-bot-sma"><em>(Please kindly note: 1 Kg free sample available with shipping and taxes paid by the Buyer.)</em></h4>
+            <h5 class="heading-4 heading-4--black margin-bot-sma">Step 1: Select Category</h5>
+            
+
+            <div class="categoryContainer"><!--layouts/sample-->
+                <div class="categoryBox categoryBox-nutmeg" onclick="clickCategory('Nutmeg')" id="Nutmeg"><!--components/categoryBox-->
+                    <div class="categoryBox__content"><!-- components/categoryBox -->
+                        <p>NUTMEG</p>
+                    </div>
+                </div>
+                <div class="categoryBox categoryBox-mace" onclick="clickCategory('Mace')" id="Mace">  
+                    <div class="categoryBox__content"> 
+                        <p>MACE</p>
+                    </div>
+                </div>
+                <div class="categoryBox categoryBox-cloves" onclick="clickCategory('Cloves')" id="Cloves"><!-- components/categoryBox -->
+                    <div class="categoryBox__content"><!-- components/categoryBox -->
+                        <p>CLOVES</p>
+                    </div>
+                </div>
+                
+                <!-- <div class="categoryBox categoryBox-energy" onclick="clickCategory('Energy')" id="Energy"> components/categoryBox 
+                    <div class="categoryBox__content"> components/categoryBox 
+                        <p>ENERGY</p>
+                    </div>
+                </div> -->
+            </div>
+            
+            
+
+            <div class="NutmegContainer disappear"><!--layouts/sample-->
+                <h5 class="heading-4 heading-4--black margin-bot-sma">Step 2: Select One Product</h5>
+                <div class="nutmegBox"><!-- components/productBox -->
+                    <div class="nutmegProduct" onclick="clickProduct('ABCD')" id="ABCD"><!-- components/productBox -->
+                        <div class="nutmegProduct__content"><!-- components/productBox -->
+                            <p>ABCD</p>
+                        </div>
+                    </div>
+                    <div class="nutmegProduct" onclick="clickProduct('SS')" id="SS"><!-- components/productBox -->
+                        <div class="nutmegProduct__content"><!-- components/productBox -->
+                            <p>SS</p>
+                        </div>
+                    </div>
+                    <div class="nutmegProduct" onclick="clickProduct('BWP')" id="BWP"><!-- components/productBox -->
+                        <div class="nutmegProduct__content"><!-- components/productBox -->
+                            <p>BWP</p>
+                        </div>
+                    </div>
+                    <div class="nutmegProduct" onclick="clickProduct('UNPEELED')" id="UNPEELED"><!-- components/productBox -->
+                        <div class="nutmegProduct__content"><!-- components/productBox -->
+                            <p>UNPEELED</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="MaceContainer disappear"> <!-- layouts/sample -->
+                <h5 class="heading-4 heading-4--black margin-bot-sma">Step 2: Select One Product</h5>
+                 <div class="maceBox"> <!-- components/productBox  -->
+                    <div class="maceProduct" onclick="clickProduct('Red-Mace')" id="Red-Mace">  
+                        <div class="maceProduct__content">  
+                            <p>Red Mace</p>
+                        </div>
+                    </div>
+                    <div class="maceProduct" onclick="clickProduct('Yellow-Mace')" id="Yellow-Mace">  
+                        <div class="maceProduct__content">  
+                            <p>Yellow Mace</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="CoffeeContainer disappear">layouts/sample
+                <h5 class="heading-4 heading-4--black margin-bot-sma">Step 2: Select One Product</h5>
+                <div class="coffeeBox">components/productBox
+                    <div class="coffeeProduct" onclick="clickProduct('Arabica-Celebes')" id="Arabica-Celebes">components/productBox
+                        <div class="coffeeProduct__content">components/productBox
+                            <p>Arabica Celebes</p>
+                        </div>
+                    </div>
+                    <div class="coffeeProduct" onclick="clickProduct('Robusta-Sumatra')" id="Robusta-Sumatra">components/productBox
+                        <div class="coffeeProduct__content">components/productBox
+                            <p>Robusta Sumatra</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- <div class="SnackContainer disappear">
+                <h5 class="heading-4 heading-4--black margin-bot-sma">Step 2: Select One Product</h5>
+                <div class="snackBox">
+                    <div class="snackProduct" onclick="clickProduct('Zanana')" id="Zanana">
+                        <div class="snackProduct__content">
+                            <p>Zanana</p>
+                        </div>
+                    </div>
+                    <div class="snackProduct" onclick="clickProduct('Pisang-Mesir')" id="Pisang-Mesir">
+                        <div class="snackProduct__content">
+                            <p>Pisang Mesir</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="ClovesContainer disappear">
+                <h5 class="heading-4 heading-4--black margin-bot-sma">Step 2: Select One Product</h5>
+                <div class="clovesBox">  
+                    <div class="clovesProduct" onclick="clickProduct('Clove-Bud')" id="Clove-Bud">  
+                        <div class="clovesProduct__content">  
+                            <p>Clove Bud</p>
+                        </div>
+                    </div>
+                    <div class="clovesProduct" onclick="clickProduct('Clove-Stem')" id="Clove-Stem">  
+                        <div class="clovesProduct__content">  
+                            <p>Clove Stem</p>
+                        </div>
+                    </div>
+                    <!-- <div class="clovesProduct" onclick="clickProduct('Charcoal-Pillow')" id="Charcoal-Pillow">
+                        <div class="clovesProduct__content">
+                            <p>Pillow</p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+
+            <form class="sampleForm margin-top-sma disappear" action="#"><!-- components/form --> <!-- disini -->
+                <h5 class="heading-4 heading-4--black margin-bot-sma">Step 3: Fill form</h5>
+
+                <div class="sampleForm__container margin-bot-med"><!-- components/form -->
+                    <div class="formDetail"><!-- components/form --> 
+                        <p class="formDetail--cat" id="category">Category: Cat</p>
+                        <p class="formDetail--prod" id="product">Product: Prod</p>
+
+                        
+                        <!-- <input type="text" class="formDetail--cat" id="category">
+                        <label for="category" class="formContact__label">Category</label>
+
+                        <input type="text" class="formDetail--prod" id="product">
+                        <label for="product" class="formContact__label">Product</label>  -->
+
+
+                    </div>
+        
+                    <div class="formSample"><!-- components/form -->
+                        <div class="formContact__group">
+                            <input type="text" class="formContact__input" placeholder="Full Name" id="name" required>
+                            <label for="name" class="formContact__label">Full Name</label>
+                        </div>
+                        <div class="formContact__group">
+                            <input type="text" class="formContact__input" placeholder="Company Name" id="company" required>
+                            <label for="company" class="formContact__label">Company Name</label>
+                        </div>
+                        <div class="formContact__group">
+                            <input type="text" class="formContact__input" placeholder="Country" id="country" required>
+                            <label for="country" class="formContact__label">Country</label>
+                        </div>
+                        <div class="formContact__group">
+                            <input type="email" class="formContact__input" placeholder="Email Address" id="email" required>
+                            <label for="email" class="formContact__label">Email Address</label>
+                        </div>
+                        <div class="formContact__group">
+                            <input type="tel" class="formContact__input" placeholder="Phone/Whatsapp No." id="tel" required>
+                            <label for="tel" class="formContact__label">Phone/Whatsapp No.</label>
+                        </div>
+                        
+                        <!--
+                        <div class="formContact__group">
+                            <label for="text"></label>
+                            <textarea name="message" placeholder="Your Message" id="message" style="height:16.5rem" required></textarea>
+                        </div>
+                        -->
+
+                        <!--<button class="btn btn-submit">Get Sample</button>-->
+                    </div>
+                </div> 
+                <div class="box-title">
+                    <button class="btn btn--submit-sample margin-bot-sma">Get Sample</button>
+                    <h4 class="heading-5 heading-5--black">We will contact you in less than 24 hours</h4>
+                </div>
+            </form><!-- disini -->
+        </div>
+
+        <footer class="footer"><!-- layouts/footer -->
+            <div class="footer__company">
+                <!-- <a href="#"><img src="image/logo.png" alt="Logo footer" class="footer__logo"></a> -->
+                <span class="footer__text"><strong>PT. Celexport Pammase International</strong><br>Infiniti Office, Belleza BSA 1st Floor Permata Hijau<br>Kebayoran Lama, Jakarta-Indonesia 12210</span>
+            </div>
+
+            <div class="footer__contact"><!-- layouts/footer -->
+                <span class="footer__phone">(62)21-5010-6260, Ext. 621</span>
+                <span class="footer__email">office@celexport.com</span>
+            </div>
+
+            <div class="footer__media"> <!--layouts/footer -->
+                <div class="footer__social"> <!--components/icon--> 
+                        <a href="https://wa.me/201200168077?text=Hello%20Celexport!" target="_blank">
+                            <svg class="footer__social--icon footer__social--icon-1">
+                                <use xlink:href="image/social.svg#whatsapp-3"></use>
+                            </svg>   
+                        </a>
+                        <a href="https://web.facebook.com/celexportinternational?_rdc=1&_rdr" target="_blank">
+                            <svg class="footer__social--icon footer__social--icon-2">
+                                <use xlink:href="image/social.svg#facebook-3"></use>
+                            </svg>   
+                        </a>
+                        <a href="https://www.instagram.com/celexport.international/" target="_blank">
+                            <svg class="footer__social--icon footer__social--icon-3">
+                                <use xlink:href="image/social.svg#instagram-2"></use>
+                            </svg>   
+                        </a>
+                        <a href="https://linkedin.com/company/celexport" target="_blank">
+                            <svg class="footer__social--icon footer__social--icon-4">
+                                <use xlink:href="image/social.svg#linkedin"></use>
+                            </svg>   
+                        </a>
+                </div>
+
+                <div class="footer__legal">
+                    &copy; 2020 by Celexport. All rights reserved.
+                </div>
+            </div>
+        </footer>
+        
+        <!--<script src="scriptSample.js"></script>-->
+        <script src="sampleSample.js"></script>
+    </body>
+</html>

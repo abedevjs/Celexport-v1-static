@@ -1,0 +1,49 @@
+.step {
+  display: grid;
+  //grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+  grid-column-gap: 1.4rem;
+  grid-row-gap: 6rem;
+
+  @include respond(phone) {
+    //600px/37.5em. 5px/16px = 31.25%
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 0;
+    grid-row-gap: 3rem;
+  }
+
+  @include respond(small-phone) {
+    //400px/25em. 4px/16px = 25%
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 1rem;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //justify-content: center;
+
+    span {
+      text-align: center;
+      font-size: 1.5rem;
+      // color: $color-black;
+
+      @include respond(tab-port) {
+        //900px/56.25em
+      }
+
+      @include respond(phone) {
+        //600px/37.5em. 5px/16px = 31.25%
+        padding: 0 2rem;
+        font-size: 2rem;
+      }
+
+      @include respond(small-phone) {
+        //400px/25em. 4px/16px = 25%
+        padding: 0 1rem;
+        // font-size: 1.4rem;
+      }
+    }
+  }
+}

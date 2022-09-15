@@ -1,0 +1,133 @@
+// .back-video {
+//   //background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   height: 100%;
+//   width: 100%;
+//   z-index: -1;
+//   opacity: 0.5;
+//   overflow: hidden;
+
+//   // @include respond(phone) {
+//   //   //600px/37.5em. 5px/16px = 31.25%
+//   //   display: none;
+//   // }
+
+//   &__content {
+//     height: 100%;
+//     width: 100%;
+//     object-fit: cover;
+//   }
+// }
+
+// .darurat {
+//   background-image: url(../../image/cengkeh150.jpg);
+//   height: 100%;
+//   width: 100%;
+//   object-fit: cover;
+// }
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+.presentation {
+  margin: 0 auto;
+  margin-top: 6rem;
+  // width: 90%;
+  // padding: 0 2rem;
+
+  display: flex;
+  justify-content: space-around;
+
+  @include respond(desktop) {
+    //1200px/75em. 9px/16px = 56.25%
+    // display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+
+  &__text {
+    // flex: 0 0 40%;
+    font-size: $default-font-size-2;
+
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    justify-content: center;
+
+    @include respond(desktop) {
+      //1200px/75em. 9px/16px = 56.25%
+      // display: none;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 2rem;
+      align-self: flex-start;
+      flex-direction: row;
+    }
+
+    &-spang {
+      span:first-child {
+        margin-bottom: 2rem;
+      }
+
+      @include respond(desktop) {
+        //1200px/75em. 9px/16px = 56.25%
+
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    a:link,
+    a:visited {
+      margin-top: 2rem;
+      align-self: baseline;
+      text-decoration: none;
+      color: $color-primary-light;
+      transition: all 0.4s;
+      font-weight: 700;
+
+      @include respond(desktop) {
+        //1200px/75em. 9px/16px = 56.25%
+        flex: 0 0 30%;
+        align-self: center;
+      }
+    }
+
+    a:hover,
+    a:active {
+      color: inherit;
+      letter-spacing: 0.3px;
+    }
+  }
+
+  &__video {
+    overflow: hidden;
+    // position: relative;
+    // height: 0;
+    height: 100%;
+    // width: 100%;
+
+    iframe {
+      border-radius: 3px;
+      border: 0.2rem solid $color-primary-light;
+      //   height: 100%;
+      //   width: 100%;
+      //   position: absolute;
+
+      @include respond(desktop) {
+        //1200px/75em. 9px/16px = 56.25%
+        // height: 100rem;
+        // width: 100%;
+        border-radius: 5px;
+      }
+
+      @include respond(phone-land) {
+        //700px/43.75em. 6px/16px = 37.5%
+        // height: 80rem;
+        width: 100%;
+      }
+    }
+  }
+}

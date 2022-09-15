@@ -1,0 +1,139 @@
+.nutmegBox,
+.coffeeBox,
+.maceBox,
+.clovesBox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 6rem;
+  justify-items: center;
+}
+
+.nutmegProduct,
+.coffeeProduct,
+.maceProduct,
+.clovesProduct {
+  height: 18rem;
+  width: 55%;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    transform: translateY(-1rem);
+    box-shadow: $shadow-light;
+  }
+
+  &__content {
+    display: block;
+    opacity: 0.8;
+    margin: auto 0 4rem 0;
+    width: 80%;
+    border-radius: 3px;
+    background-color: $color-white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    P {
+      font-size: $default-font-size;
+      color: $color-primary-light;
+      text-align: center;
+      padding: 0.5rem;
+      font-weight: 600;
+    }
+  }
+}
+
+#ABCD,
+#SS,
+#BWP,
+#UNPEELED,
+#Red-Mace,
+#Yellow-Mace,
+#Clove-Bud,
+#Clove-Stem,
+#Galangal-Root,
+#Candlenut,
+#Arabica-Celebes,
+#Robusta-Sumatra,
+#Mung-Bean,
+#Desiccated-Coconut,
+#Charcoal-Briquette,
+#Wood-Charcoal,
+#Charcoal-Pillow {
+  background-size: cover;
+  background-position: center;
+}
+
+#ABCD {
+  background-image: url(../../image/abcd.png);
+}
+
+#SS {
+  background-image: url(../../image/ss.png);
+}
+
+#BWP {
+  background-image: url(../../image/bwp.png);
+}
+
+#UNPEELED {
+  background-image: url(../../image/unpeeled.png);
+}
+
+#Red-Mace {
+  background-image: url(../../image/redMace.png);
+}
+
+#Yellow-Mace {
+  background-image: url(../../image/yellowMace.png);
+}
+
+#Clove-Bud {
+  background-image: url(../../image/cloveBud.png);
+}
+
+#Clove-Stem {
+  background-image: url(../../image/cloveStem.png);
+}
+
+#Galangal-Root {
+  background-image: url(../../image/galangalRoot.png);
+}
+
+#Candlenut {
+  background-image: url(../../image/candlenut.png);
+}
+
+#Mung-Bean {
+  background-image: url(../../image/mungBean.png);
+}
+
+#Desiccated-Coconut {
+  background-image: url(../../image/desiccatedCoconut.png);
+}
+
+#Arabica-Celebes {
+  background-image: url(../../image/arabicaCelebes.png);
+}
+
+#Robusta-Sumatra {
+  background-image: url(../../image/robustaSumatra.png);
+}
+
+// #Charcoal-Briquette {
+//   background-image: url(../../image/briquetteCharcoal150.jpg);
+// }
+
+// #Wood-Charcoal {
+//   background-image: url(../../image/woodCharcoal150.jpg);
+// }
+
+// #Charcoal-Pillow {
+//   background-image: url(../../image/pillow150.jpg);
+// }

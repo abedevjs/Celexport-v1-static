@@ -1,0 +1,92 @@
+.footer {
+  //margin-top: $margin-top-low;
+  //background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-verylight);
+  background-color: $color-grey-dark-3;
+  //border-top: 1px solid $color-grey-light-2;
+  padding: 3rem 0;
+  border-radius: 3px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  @include respond(phone) {
+    //600px/37.5em. 5px/16px = 31.25%
+    justify-content: space-evenly;
+  }
+
+  &__company {
+    //display: flex;
+    //flex-direction: column;
+  }
+
+  &__logo {
+    display: block;
+    height: 6rem;
+    width: auto;
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    color: $color-grey-light-3;
+
+    @include respond(phone) {
+      //600px/37.5em. 5px/16px = 31.25%
+      font-size: 1.7rem;
+    }
+
+    // @include respond(small-phone) {
+    //   //400px/25em. 4px/16px = 25%
+    //   font-size: 1rem;
+    // }
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include respond(phone) {
+      //600px/37.5em. 5px/16px = 31.25%
+      // font-size: 2rem;
+      // letter-spacing: 1px;
+      display: none;
+    }
+  }
+
+  &__phone,
+  &__email {
+    font-size: 2.3rem;
+    color: $color-white;
+    font-weight: 400;
+    letter-spacing: 2px;
+    //font-family: Crimson Text;
+    @include respond(phone) {
+      //600px/37.5em. 5px/16px = 31.25%
+      // font-size: 2rem;
+      // letter-spacing: 1px;
+      // display: none;
+    }
+
+    // @include respond(small-phone) {
+    //   //400px/25em. 4px/16px = 25%
+    //   font-size: 1.5rem;
+    //   letter-spacing: 0;
+    // }
+  }
+
+  &__media {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__legal {
+    font-size: 1.2rem;
+    color: $color-grey-light-3;
+
+    // @include respond(small-phone) {
+    //   //400px/25em. 4px/16px = 25%
+    //   font-size: 1rem;
+    // }
+  }
+}

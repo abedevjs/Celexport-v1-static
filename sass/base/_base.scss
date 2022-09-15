@@ -1,0 +1,75 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  /* it will force the inheritance of box-sizing of their parent */
+}
+
+html {
+  font-size: 62.5%; //1rem = 10px; 10px/16px = 62.5%
+  /* we called this font-size because this is a global rule of size. not just he rules font size but also length such as padding, margin, width etc. and this valued in percent of 16 px user default browser just in case he adjust the font size because eye weakness. jadi angka 62.5% itu di dapat dari 10/16 = 0.625. kita jadi kan persen 62.5%, jadi misalnya 1rem = 10% trus 62.5% =  16px maka 1rem = 1px */
+
+  @include respond(desktop) {
+    //1200px/75em. 9px/16px = 56.25%
+    font-size: 56.25%;
+  }
+
+  @include respond(tab-land) {
+    //1000px/62.5em. 8px/16px = 50%
+    font-size: 50%;
+  }
+
+  @include respond(tab-port) {
+    //900px/56.25em. 7px/16px = 43.75%
+    font-size: 43.75%;
+  }
+
+  @include respond(phone-land) {
+    //700px/43.75em. 6px/16px = 37.5%
+    font-size: 37.5%;
+  }
+
+  @include respond(phone) {
+    //600px/37.5em. 5px/16px = 31.25%
+    font-size: 31.25%;
+  }
+
+  @include respond(small-phone) {
+    //400px/25em. 4px/16px = 25%
+    font-size: 25%;
+  }
+
+  @include respond(big-desktop) {
+    //1400px/112.5em. 11px/16px = 68.75%
+    font-size: 68.75%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  // padding: 2rem; /* padding will get inheritance if only specified with 1 format size */
+  background-color: $color-white;
+  //background-image: radial-gradient( $color-white, $color-secondary-verylight);
+  //background-image: linear-gradient( to top, $color-white, $color-secondary-verylight);
+  // background-image: url(../../image/iconorange.png);
+  // background-size: cover;
+  // background-position: center;
+  // background-attachment: fixed;
+
+  // @include respond(tab-port) {
+  //   //900px/56.25em. 7px/16px = 43.75%
+  //   padding: 0;
+  // }
+}
+
+::selection {
+  color: $color-white;
+  background: $color-primary-light;
+}
+
+::-moz-selection {
+  color: $color-white;
+  background: $color-primary-light;
+}

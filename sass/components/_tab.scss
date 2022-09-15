@@ -1,0 +1,240 @@
+.tab {
+  margin: 0 auto;
+  width: 90%;
+  height: 50rem;
+  box-shadow: $shadow-ultralight;
+  border-radius: 3px;
+  padding: 1rem;
+  background-color: $color-white;
+  border: 1px solid $color-grey-light-2;
+}
+
+.tablink {
+  //Style tab links
+  background-color: $color-primary-light;
+  //background-image: linear-gradient(to bottom, $color-primary-light, $color-primary-bold);
+  color: white;
+  font-size: $default-font-size;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 1.4rem 1.6rem;
+  width: 25%;
+  transition: all 0.5s;
+  margin-bottom: 1rem;
+
+  &:hover {
+    background-color: $color-primary-dark;
+  }
+}
+
+.tabcontent {
+  //Style the tab content (and add height:100% for full page content)
+  color: $color-black;
+  //background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../image/logo.png);
+  //background-size: cover;
+  //background-position: center;
+  //background-attachment: fixed;
+  //display: none;
+  padding: 0 2rem;
+  height: 100%;
+
+  &__inside {
+    //padding-left: 3rem;
+  }
+
+  &__title {
+    margin: -1rem 0 0 0;
+    text-align: left;
+  }
+}
+
+// .mission,
+.about-us {
+  display: block;
+  //padding: 0 15rem 0 3rem;
+  font-size: $default-font-size-1;
+  color: $color-grey-dark;
+}
+
+.mission {
+  color: $color-grey-dark;
+  font-size: $default-font-size-2;
+  @include respond(small-phone) {
+    //400px/25em. 4px/16px = 25%
+    // font-size: $default-font-size-1;
+  }
+}
+
+.about-us {
+  @include respond(phone) {
+    //600px/37.5em. 5px/16px = 31.25%
+    font-size: $default-font-size;
+  }
+
+  @include respond(small-phone) {
+    //400px/25em. 4px/16px = 25%
+    // font-size: 1.2rem;
+  }
+}
+
+#visions {
+  margin-top: 3rem;
+}
+
+.vision {
+  //padding-left: 3rem;
+
+  display: flex;
+  align-items: center;
+  //justify-content: center;
+
+  &:not(:last-child) {
+    //padding: 0 5rem;
+    margin-bottom: 2rem;
+  }
+
+  &__number {
+    display: inline-block;
+    color: $color-primary-light;
+    padding: 0.5rem 1.4rem;
+    border-radius: 50%;
+    border: 2px solid $color-primary-light;
+    font-size: $default-font-size-2;
+  }
+
+  &__text {
+    color: $color-grey-dark;
+    margin-left: 1rem;
+    font-size: $default-font-size-2;
+
+    @include respond(small-phone) {
+      //400px/25em. 4px/16px = 25%
+      // font-size: $default-font-size-1;
+    }
+  }
+}
+
+/*
+  #Home { background-color: #023; }
+  #News {background-color: #023;}
+  #Contact {background-color: #023;}
+  #About {background-color: #023;}
+*/
+
+.founder {
+  display: flex;
+  justify-content: space-around;
+
+  @include respond(phone) {
+    //600px/37.5em. 5px/16px = 31.25%
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    justify-items: center;
+  }
+
+  @include respond(small-phone) {
+    //400px/25em. 4px/16px = 25%
+    //flex-direction: column;
+    //justify-content: center;
+
+    &:not(:last-child) {
+      //padding: 0 5rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+
+    &:not(:last-child) {
+      padding-right: 2rem;
+    }
+
+    @include respond(small-phone) {
+      //400px/25em. 4px/16px = 25%
+      // flex-direction: row;
+      // align-items: center;
+
+      &:not(:last-child) {
+        //padding: 0 5rem;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+
+  &__photo {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    box-shadow: $shadow-ultralight;
+
+    @include respond(phone) {
+      //600px/25em. 4px/16px = 25%
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &__name {
+    color: $color-grey-dark-3;
+    font-size: $default-font-size-1;
+    font-weight: 700;
+
+    @include respond(phone) {
+      //600px/37.5em. 5px/16px = 31.25%
+      font-size: 2.2rem;
+      // margin-right: 0.7rem;
+    }
+  }
+
+  &__title {
+    color: $color-primary-light;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+
+    @include respond(phone) {
+      //600px/37.5em. 5px/16px = 31.25%
+      margin-bottom: 1rem;
+    }
+
+    @include respond(small-phone) {
+      //600px/37.5em. 5px/16px = 31.25%
+      //display: none;
+      font-size: 2rem;
+    }
+  }
+
+  &__description {
+    color: $color-grey-dark;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+
+    @include respond(phone) {
+      //600px/37.5em. 5px/16px = 31.25%
+      display: none;
+      font-size: 1.3rem;
+    }
+
+    @include respond(small-phone) {
+      //400px/25em. 4px/16px = 25%
+      display: none;
+      font-size: 1.2rem;
+    }
+  }
+
+  &__socmed {
+    display: flex;
+
+    a:not(:last-child) {
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////

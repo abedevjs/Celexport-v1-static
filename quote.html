@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/style.css">
+        <!-- <script defer src="quoteQuote.js"></script> -->
+        <script defer src="part2.js"></script>
+
+        <title>Celexport | Get a Quote</title>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/image/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/image/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/image/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/image/favicons/site.webmanifest">
+        <link rel="mask-icon" href="/image/favicons/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="/image/favicons/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-config" content="/image/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    <body>
+
+        <div class="sticky sticky--sample">
+            <a href="#header"><img src="image/logo.png" alt="Logo" class="sticky__logo"></a>
+                
+            <nav class="sticky__nav">
+                <ul class="sticky__nav sticky__nav-ul">
+                    <li><a href="#product">PRODUCT</a></li>
+                    <li><a href="#terms">OUR TERMS</a></li>
+                    <li><a href="#about">COMPANY</a></li>
+                    <li><a href="#catalog">CATALOG</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+
+            <div class="sticky__button">
+                <!-- <a href="#" class="btn btn--main">Get a Quote</a> -->
+                <a href="#" class="btn btn--sub">Free Sample</a>
+            </div>
+        </div>
+
+        
+
+        <div class="sample"><!--layouts/sample-->
+            <div class="box-title margin-top-veryHigh margin-bot-med">
+                <h2>GET A QUOTE</h2>
+            </div>
+            <h5 class="heading-4 heading-4--black margin-bot-sma">Step 1: Select Category</h5>
+            
+            <div class="categoryContainer"><!--layouts/sample-->
+                <div class="categoryBox categoryBox-nutmeg" onclick="clickCategory('Nutmeg')" id="Nutmeg"><!--components/categoryBox-->
+                    <div class="categoryBox__content"><!-- components/categoryBox -->
+                        <p>NUTMEG</p>
+                    </div>
+                </div>
+                <div class="categoryBox categoryBox-mace" onclick="clickCategory('Mace')" id="Mace">  
+                    <div class="categoryBox__content"> 
+                        <p>MACE</p>
+                    </div>
+                </div>
+                <div class="categoryBox categoryBox-cloves" onclick="clickCategory('Cloves')" id="Cloves"><!-- components/categoryBox -->
+                    <div class="categoryBox__content"><!-- components/categoryBox -->
+                        <p>CLOVES</p>
+                    </div>
+                </div>
+                
+                <!-- <div class="categoryBox categoryBox-energy" onclick="clickCategory('Energy')" id="Energy"> components/categoryBox 
+                    <div class="categoryBox__content"> components/categoryBox 
+                        <p>ENERGY</p>
+                    </div>
+                </div> -->
+            </div>
+            
+            
+
+            <div class="NutmegContainer disappear"><!--layouts/sample-->
+                <h5 class="heading-4 heading-4--black margin-bot-sma">Step 2: Select One Product</h5>
+                <div class="nutmegBox"><!-- components/productBox -->
+                    <div class="nutmegProduct" onclick="clickProduct('ABCD')" id="ABCD"><!-- components/productBox -->
+                        <div class="nutmegProduct__content"><!-- components/productBox -->
+                            <p>ABCD</p>
+                        </div>
+                    </div>
+                    <div class="nutmegProduct" onclick="clickProduct('SS')" id="SS"><!-- components/productBox -->
+                        <div class="nutmegProduct__content"><!-- components/productBox -->
+                            <p>SS</p>
+                        </div>
+                    </div>
+                    <div class="nutmegProduct" onclick="clickProduct('BWP')" id="BWP"><!-- components/productBox -->
+                        <div class="nutmegProduct__content"><!-- components/productBox -->
+                            <p>BWP</p>
+                        </div>
+                    </div>
+                    <div class="nutmegProduct" onclick="clickProduct('UNPEELED')" id="UNPEELED"><!-- components/productBox -->
+                        <div class="nutmegProduct__content"><!-- components/productBox -->
+                            <p>UNPEELED</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="MaceContainer disappear"> <!-- layouts/sample -->
+                <h5 class="heading-4 heading-4--black margin-bot-sma">Step 2: Select One Product</h5>
+                 <div class="maceBox"> <!-- components/productBox  -->
+                    <div class="maceProduct" onclick="clickProduct('Red-Mace')" id="Red-Mace">  
+                        <div class="maceProduct__content">  
+                            <p>Red Mace</p>
+                        </div>
+                    </div>
+                    <div class="maceProduct" onclick="clickProduct('Yellow-Mace')" id="Yellow-Mace">  
+                        <div class="maceProduct__content">  
+                            <p>Yellow Mace</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ClovesContainer disappear">
+                <h5 class="heading-4 heading-4--black margin-bot-sma">Step 2: Select One Product</h5>
+                <div class="clovesBox">  
+                    <div class="clovesProduct" onclick="clickProduct('Clove-Bud')" id="Clove-Bud">  
+                        <div class="clovesProduct__content">  
+                            <p>Clove Bud</p>
+                        </div>
+                    </div>
+                    <div class="clovesProduct" onclick="clickProduct('Clove-Stem')" id="Clove-Stem">  
+                        <div class="clovesProduct__content">  
+                            <p>Clove Stem</p>
+                        </div>
+                    </div>
+                    <!-- <div class="clovesProduct" onclick="clickProduct('Charcoal-Pillow')" id="Charcoal-Pillow">
+                        <div class="clovesProduct__content">
+                            <p>Pillow</p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+
+            <!-- <div class="SnackContainer disappear">layouts/sample
+                <h5 class="heading-4 heading-4--black margin-bot-sma">Step 2: Select One Product</h5>
+                <div class="snackBox"> components/productBox 
+                    <div class="snackProduct" onclick="clickProduct('Zanana')" id="Zanana"> components/productBox 
+                        <div class="snackProduct__content"> components/productBox 
+                            <p>Zanana</p>
+                        </div>
+                    </div>
+                    <div class="snackProduct" onclick="clickProduct('Pisang-Mesir')" id="Pisang-Mesir"> components/productBox 
+                        <div class="snackProduct__content"> components/productBox 
+                            <p>Pisang Mesir</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- <div class="EnergyContainer disappear"> layouts/sample
+                <h5 class="heading-4 heading-4--black margin-bot-sma">Step 2: Select One Product</h5>
+                <div class="energyBox"> components/productBox 
+                    <div class="energyProduct" onclick="clickProduct('Wood-Charcoal')" id="Wood-Charcoal"> components/productBox 
+                        <div class="energyProduct__content"> components/productBox 
+                            <p>Wood Charcoal</p>
+                        </div>
+                    </div>
+                    <div class="energyProduct" onclick="clickProduct('Charcoal-Briquette')" id="Charcoal-Briquette"> components/productBox 
+                        <div class="energyProduct__content"> components/productBox 
+                            <p>Charcoal Briquette</p>
+                        </div>
+                    </div>
+                    <div class="energyProduct" onclick="clickProduct('Charcoal-Pillow')" id="Charcoal-Pillow">
+                        <div class="energyProduct__content">
+                            <p>Pillow</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <form action="#" class="quoteForm margin-top-sma disappear"> <!--components/form  form dari sini -->
+                <h5 class="heading-4 heading-4--black margin-bot-sma">Step 3: Fill form</h5>
+                <div class="quoteBlock margin-bot-med"><!-- layouts/quote -->
+                    <h4 class="heading-4 heading-4--blue margin-bot-sma">Product Information</h4>
+
+                    <div class="quoteProduct-1 margin-bot-sma">
+                        <p class="formDetail--cat">Category: Cat</p>
+                        <p class="formDetail--prod">Product: Prod</p>
+                        <!-- <p class="formDetail--hs">HS Code: Prod</p> -->
+                    </div>
+
+                    <div class="quoteProduct"><!-- layouts/quote -->
+                        
+                        <div class="quoteProduct-2">
+                            <input type="number" class="formContact__input" placeholder="Quantity" id="quantity" min="1" max="5" required>
+                            <label for="Quantity" class="formContact__label">Quantity</label>
+                        </div>
+                        <div class="quoteProduct-3">
+                            <select name="UOM" class="formContact__input" id="UOM" required>
+                                <option value="ton" selected>Tons</option>
+                                <option value="twentyFCL">20' Full Container Load</option>
+                                <option value="fourtyFCL">40' Full Container Load</option>
+                                <!--<option value="Kg">Kilogram (Kg)</option>-->
+                            </select>
+                            <label for="UnitOfMeasurement" class="formContact__label">Unit Of Measurement</label>
+                        </div>
+                        <!-- <div class="quoteProduct-4">
+                            <select name="pack" class="formContact__input" id="pack" required>
+                                <option value="PP" selected>Polypropylene Bag</option>
+                                <option value="Gunny">Gunny Bag</option>
+                            </select>
+                            <label for="pack" class="formContact__label">Packaging</label>
+                        </div> -->
+                    </div>
+
+                    <h4 class="heading-4 heading-4--blue margin-bot-sma margin-top-med">Delivery Information</h4>
+                    <div class="quoteDelivery"> <!--layouts/quote -->
+                        <div class="quotedelivery-2">
+                            <select name="inco" class="formContact__input" id="inco" required>
+                                <option value="FOB" selected>FOB (Free on Board)</option>
+                                <option value="CFR">CFR (Cost and Freight)</option>
+                                <option value="CIF">CIF (Cost, Insurance and Freight)</option>
+                            </select>
+                            <label for="inco" class="formContact__label">Incoterms</label>
+                        </div>
+                        <div class="quotedelivery-3">
+                            <input type="text" class="formContact__input" placeholder="Destination Country" id="des" required>
+                            <label for="des" class="formContact__label">Destination Country</label>
+                        </div>
+                        <div class="quotedelivery-4">
+                            <input type="text" class="formContact__input" placeholder="Port of Discharge" id="pod" required>
+                            <label for="pod" class="formContact__label">Port of Discharge</label>
+                        </div> 
+                    </div>
+
+                    <h4 class="heading-4 heading-4--blue margin-bot-sma margin-top-med">Payment Information</h4>
+                    <div class="quotePayment"> <!--layouts/quote -->
+                        <div class="quotedelivery-1">
+                            <select name="payTerm" class="formContact__input" id="payTerm" required>
+                                <!-- <option value="advance" selected>100% Irrevocable L/C at Sight</option> -->
+                                <option value="atSight">LC at Sight</option>
+                                <option value="dpThirty">30% down payment, 70% against all Documents</option>
+                            </select>
+                            <label for="payTerm" class="formContact__label">Payment Term</label>
+                        </div>
+                        <div class="quotedelivery-2">
+                            <select name="payMethod" class="formContact__input" id="payMethod" required>
+                                <option value="lc" selected>Irrevocable L/C at Sight</option>
+                                <option value="tt">Telegraphic Transfer (TT)</option>
+                                <!-- <option value="cad">Cash Against Document (CAD)</option> -->
+                            </select>
+                            <label for="payMethod" class="formContact__label">Payment Method</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="quoteFormContainer margin-bot-med"><!-- layouts/quote -->
+                    <div class="quoteCompany"><!-- layouts/quote -->
+                        <div class="quoteBlock formCompanyDetail">
+                            <h4 class="heading-4 heading-4--blue margin-bot-sma">Company Information</h4>
+                            <div class="formContact__group">
+                                <input type="text" class="formContact__input" placeholder="Company Name" id="noc" required>
+                                <label for="noc" class="formContact__label">Company Name</label>
+                            </div>
+                            <!-- <div class="formContact__group">
+                                <input type="text" class="formContact__input" placeholder="Address" id="adr" required>
+                                <label for="adr" class="formContact__label">Address</label>
+                            </div> -->
+                            <div class="formContact__group">
+                                <input type="text" class="formContact__input" placeholder="Country" id="cou" required>
+                                <label for="cou" class="formContact__label">Country</label>
+                            </div>
+                            <!-- <div class="formContact__group">
+                                <input type="text" class="formContact__input" placeholder="State" id="sta" required>
+                                <label for="sta" class="formContact__label">State</label>
+                            </div>
+                            <div class="formContact__group">
+                                <input type="text" class="formContact__input" placeholder="City" id="cit" required>
+                                <label for="cit" class="formContact__label">City</label>
+                            </div>
+                            <div class="formContact__group">
+                                <input type="tel" class="formContact__input" placeholder="Tel" id="tel" required>
+                                <label for="tel" class="formContact__label">Tel</label>
+                            </div> -->
+                            <!-- <div class="formContact__group">
+                                <input type="email" class="formContact__input" placeholder="Email" id="emaCom">
+                                <label for="emaCom" class="formContact__label">Email</label>
+                            </div> -->
+                            <!-- <div class="formContact__group">
+                                <input type="text" class="formContact__input" placeholder="Website" id="web">
+                                <label for="web" class="formContact__label">Website</label>
+                            </div> -->
+                        </div>
+                    </div>
+                    
+                    <div class="quoteContact"><!-- layouts/quote -->
+                        <div class="quoteBlock formContactDetail">
+                            <h4 class="heading-4 heading-4--blue margin-bot-sma">Contact Information</h4>
+                            <div class="formContact__group">
+                                <select name="sal" class="formContact__input" id="sal" required>
+                                <option value="Mr." selected>Mr.</option>
+                                <option value="Ms.">Ms.</option>
+                                <option value="Mrs.">Mrs.</option>
+                                <option value="Dr.">Dr.</option>
+                                </select>
+                                <label for="sal" class="formContact__label">Salutation</label>
+                            </div>
+                            <div class="formContact__group">
+                                <input type="text" class="formContact__input" placeholder="First Name" id="fir" required>
+                                <label for="fir" class="formContact__label">Full Name</label>
+                            </div>
+                            <!-- <div class="formContact__group">
+                                <input type="text" class="formContact__input" placeholder="Last Name" id="las" required>
+                                <label for="las" class="formContact__label">Last Name</label>
+                            </div> -->
+                            <div class="formContact__group">
+                                <input type="email" class="formContact__input" placeholder="Email" id="emaCon" required>
+                                <label for="emaCon" class="formContact__label">Email</label>
+                            </div>
+                            <div class="formContact__group">
+                                <input type="text" class="formContact__input" placeholder="Mobile" id="pho" required>
+                                <label for="pho" class="formContact__label">Mobile</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-title">
+                    <button class="btn btn--submit-quote margin-bot-sma">Request a Quote</button>
+                    <h4 class="heading-5 heading-5--black">We will contact you within <strong>1 working day</strong></h4>
+                </div>
+                
+            </form> <!-- form sampai sini -->
+        </div>
+
+        <div class="quoteSummary" id="quoteSummary">
+            <div class="box-title margin-top-veryHigh margin-bot-med">
+                <h2>QUOTE SUMMARY</h2>
+            </div>
+                
+            <div class="quoteSummary__content"> 
+                <div class="quoteLeft">
+                    <div class="quoteLeft__list quoteLeft__list--1">
+                        <p> Dear <b>${sal.options[sal.selectedIndex].text} ${fir.value}</b>,<br>
+                        Thank you for your enquiry. Celexport is pleased to make you the following offer, for which please find our further details below.</p>
+                        <br>
+                        <p> Quote Number: <b>Q${Qnumber}</b><br>
+                        <p> Offer expires At: <b>${validEnd}</b><br>
+                        Our quotation is valid until the above mentioned offer expiry date. We reserve the right to review and re-quote, if we do not receive
+                        any acceptance confirmation, prior to above mentioned offer expiry date.</p>
+                    </div>
+                    <div class="quoteLeft__list quoteLeft__list--2">
+                        <h5 class="heading-5 heading-5--blue ">Product Information</h4>
+                        <ul>
+                            <li>Name: <b>${currComm.name}</b></li>
+                            <li>HS Code: <b>${currComm.hsCode}</b></li>
+                            <li>Quality: <b>${currComm.quality}</b></li>
+                            <li>Quantity: <b>${weightCount} ${UOM.options[UOM.selectedIndex].text === 'Tons' ? '' : 'of'} ${UOM.options[UOM.selectedIndex].text} ${UOM.options[UOM.selectedIndex].text === 'Tons' ? '' : '/'} ${UOM.options[UOM.selectedIndex].text === 'Tons' ? '' : weightInMT} ${UOM.options[UOM.selectedIndex].text === 'Tons' ? '' : 'MT'}</b></li>
+                            <li>Lead Time: <b>${leadTime} days</b> <em>(after the initial payment)</em></li>
+                            <li>Package Method: <b>${pack.options[pack.selectedIndex].text}</b></li>
+                        </ul>
+                    </div>
+                    <div class="quoteLeft__list quoteLeft__list--3">
+                        <h5 class="heading-5 heading-5--blue ">Documents Included:</h4>
+                        <ul>
+                            <li>Commercial Invoice</li>
+                            <li>Packing List</li>
+                            <li>Certificate of Origin</li>
+                            <li>Certificate of Phytosanitary</li>
+                            <li>Certificate of Fumigation</li>
+                            <li><em>(Upon Buyer request)</em></li>
+                        </ul>
+                    </div>
+                        <div class="quoteLeft__list quoteLeft__list--4">
+                        <h5 class="heading-5 heading-5--blue ">Payment Information</h4>
+                        <ul>
+                            <li>Payment Term: <b>${payTerm.options[payTerm.selectedIndex].text}</b></li>
+                            <li>Payment Method: <b>${payMethod.options[payMethod.selectedIndex].text}</b></li>
+                        </ul>
+                    </div>
+                    <div class="quoteLeft__list quoteLeft__list--5">
+                        <h5 class="heading-5 heading-5--blue ">Price Information</h4>
+                        <div class="quotePriceList">
+                            <div class="quotePriceList__fob">
+                                <h4>FOB ${currComm.origin}, Indonesia</h4>
+                                <p>Total: <span class="quotePriceList__fob--numbers">$${formatNumber(fob.inRp / inUSD, 'total')}</span></p>
+                                <p>per MT: <span class="quotePriceList__fob--numbers">$${formatNumber(fob.perMT, 'MT')}</span></p>
+                                <p>per KG: <span class="quotePriceList__fob--numbers">$${formatNumber(fob.perKg, 'KG')}</span></p>
+                            </div>
+                            <div class="quotePriceList__cfr">
+                                <h4>CFR ${pod.value}, ${des.value}</h4>
+                                <p class="quotePriceList__cfr--numbers">Due to freight rates shift, we will send this request to: <em>${emaCon.value}</em> <br> in less than 24 hours.</p>
+                            </div>
+                            <div class="quotePriceList__cif">
+                                <h4>CIF ${pod.value}, ${des.value}</h4>
+                                <p class="quotePriceList__cif--numbers">Due to freight rates shift, we will send this request to: <em>${emaCon.value}</em> <br> in less than 24 hours.</p>
+                            </div>
+                        </div>
+                    </div>
+  
+                    <div class="quoteCTA">
+                        <p>For more quote request please <a href='/quote'><em>reload</em></a>  this page. <br> If you want to proceed further with this offer or have any other inquiries, please do not hesitate to contact me.</p>
+                        <div class="quoteCTA__box">
+                            <img src="image/abe.png" alt="Muhammad Akbar"  class="founder__photo">
+                            <div class="quoteCTA__box quoteCTA__box--text">
+                                <span class="founder__name">Muhammad Akbar</span>
+                                <span class="founder__title">Chief Operations Officer</span>
+                            </div>
+                            <div class="quoteCTA__box quoteCTA__box--icon">
+                                <a href="https://wa.me/6281284906025?text=Hello%20Celexport!" target="_blank">
+                                    <svg class="founder__icon founder__icon-5">
+                                        <use xlink:href="image/social.svg#whatsapp-3"></use>
+                                    </svg>   
+                                </a>
+                                <a href="mailto:akbar@celexport.com" target="_blank">
+                                    <svg class="founder__icon founder__icon-1">
+                                        <use xlink:href="image/social.svg#email"></use>
+                                    </svg>   
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="quoteRight">
+                    <img src="image/${currComm.initial}.png" alt="quoteRight image">
+                    <div class="quoteRight quoteRight--text">
+                        <p>Quote Number: <b>Q${Qnumber}</b></p>
+                        <p>Valid from: <b>${validStart}</b></p>
+                        <p>Valid until: <b>${validEnd}</b></p>
+                    </div>
+                    <div class="quoteRight quoteRight--button">
+                        <!-- <p>Send your Quote to <b>${emaCon.value}</b> ?</p> -->
+                        <button class="btn btn--submit-contact" id="downloadPDF">Download PDF</button>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer"><!-- layouts/footer -->
+            <div class="footer__company">
+                <!-- <a href="#"><img src="image/logo.png" alt="Logo footer" class="footer__logo"></a> -->
+                <span class="footer__text"><strong>PT. Celexport Pammase International</strong><br>Infiniti Office, Belleza BSA 1st Floor Permata Hijau<br>Kebayoran Lama, Jakarta-Indonesia 12210</span>
+            </div>
+
+            <div class="footer__contact"><!-- layouts/footer -->
+                <span class="footer__phone">(62)21-5010-6260, Ext. 621</span>
+                <span class="footer__email">office@celexport.com</span>
+            </div>
+
+            <div class="footer__media"> <!--layouts/footer -->
+                <div class="footer__social"> <!--components/icon--> 
+                        <a href="https://wa.me/201200168077?text=Hello%20Celexport!" target="_blank">
+                            <svg class="footer__social--icon footer__social--icon-1">
+                                <use xlink:href="image/social.svg#whatsapp-3"></use>
+                            </svg>   
+                        </a>
+                        <a href="https://web.facebook.com/celexportinternational?_rdc=1&_rdr" target="_blank">
+                            <svg class="footer__social--icon footer__social--icon-2">
+                                <use xlink:href="image/social.svg#facebook-3"></use>
+                            </svg>   
+                        </a>
+                        <a href="https://www.instagram.com/celexport.international/" target="_blank">
+                            <svg class="footer__social--icon footer__social--icon-3">
+                                <use xlink:href="image/social.svg#instagram-2"></use>
+                            </svg>   
+                        </a>
+                        <a href="https://linkedin.com/company/celexport" target="_blank">
+                            <svg class="footer__social--icon footer__social--icon-4">
+                                <use xlink:href="image/social.svg#linkedin"></use>
+                            </svg>   
+                        </a>
+                </div>
+
+                <div class="footer__legal">
+                    &copy; 2020 by Celexport. All rights reserved.
+                </div>
+            </div>
+        </footer>
+
+        <!--<script src="scriptSample.js"></script>-->
+        <!-- <script src="quoteQuote.js"></script> -->
+    </body>
+</html>

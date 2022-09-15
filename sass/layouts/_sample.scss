@@ -1,0 +1,42 @@
+.sample {
+  padding-bottom: 5rem;
+
+  h3,
+  h4,
+  h5 {
+    display: block;
+    margin-left: 2rem;
+  }
+}
+
+.categoryContainer {
+  // display: grid;
+  // grid-template-columns: repeat(4, 1fr);
+  // justify-items: center;
+
+  display: flex;
+  justify-content: space-evenly;
+
+  &:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+}
+
+.NutmegContainer,
+// .CoffeeContainer,
+.MaceContainer,
+.ClovesContainer {
+  margin-bottom: 4rem;
+}
+
+.show {
+  display: block;
+}
+
+.disappear {
+  display: none;
+}
+
+.blur {
+  opacity: 0.3;
+}

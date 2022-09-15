@@ -1,0 +1,62 @@
+.categoryBox {
+  //display: block;
+  //opacity: .3;
+  height: 30rem;
+  width: 25rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    transform: translateY(-1rem);
+    box-shadow: $shadow-light;
+  }
+
+  &__content {
+    display: block;
+    opacity: 0.8;
+    margin: auto 0 4rem 0;
+    width: 80%;
+    border-radius: 3px;
+    background-color: $color-white;
+
+    P {
+      font-size: $default-font-size;
+      color: $color-primary-light;
+      letter-spacing: 1px;
+      text-align: center;
+      padding: 1rem;
+      font-weight: 600;
+    }
+  }
+}
+
+#Nutmeg,
+#Mace,
+// #Coffee,
+#Cloves {
+  background-size: cover;
+  background-position: center;
+}
+
+#Nutmeg {
+  //background-image: linear-gradient(to right bottom,rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url(../../image/grains.jpg);
+  background-image: url(../../image/nutmeg.png);
+}
+
+// #Coffee {
+//   //background-image: linear-gradient(to right bottom,rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url(../../image/grains.jpg);
+//   background-image: url(../../image/coffeeGreenBean.jpg);
+// }
+
+#Mace {
+  background-image: url(../../image/mace.png);
+}
+
+#Cloves {
+  background-image: url(../../image/clove.png);
+}

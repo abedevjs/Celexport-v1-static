@@ -1,0 +1,155 @@
+.formContact,
+.formSample {
+  //border: 1px solid orangered;
+  background-color: $color-grey-light-1;
+  width: 100%;
+  padding: 2rem;
+  padding-bottom: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*
+    @include respond(desktop) {//1200px. 9px/16px = 56.25%
+        flex: 1;
+    }*/
+
+  /*
+    @include respond(tab-port) {//900px/56.25em. 7px/16px = 43.75%
+        height: 50%;
+    }*/
+
+  button {
+    align-self: flex-start;
+    margin-top: 5rem;
+
+    @include respond(desktop) {
+      //1200px/75em. 9px/16px = 56.25%
+      margin-top: 3rem;
+    }
+  }
+
+  &__group {
+    &:not(:last-child) {
+      margin-bottom: 0.7rem;
+
+      @include respond(tab-port) {
+        //900px/56.25em. 7px/16px = 43.75%
+        //margin-bottom: 0.5rem;;
+      }
+    }
+  }
+
+  &__input {
+    font-size: $default-font-size;
+    color: $color-grey-dark-3;
+    font-family: inherit;
+    padding: 0.5rem 1rem;
+    border-radius: 2px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    width: 100%;
+    display: block;
+    transition: all 0.3s;
+
+    &:focus {
+      outline: none;
+      box-shadow: $shadow-verylight;
+      border-bottom: 2px solid $color-primary-light;
+    }
+
+    &:focus:invalid {
+      //ini untuk inform user klo input yang mereka masukkan salah
+      border-bottom: 2px solid red;
+    }
+
+    &::-webkit-input-placeholder {
+      color: $color-grey-dark-2;
+    }
+  }
+
+  & textarea {
+    //font-size: $default-font-size;
+    resize: none;
+    color: $color-grey-dark-3;
+    font-family: inherit;
+    border-radius: 2px;
+    border: none;
+    border-bottom: 3px solid transparent;
+    width: 100%;
+    //max-width: 95%;
+    display: block;
+    transition: all 0.3s;
+
+    &:focus {
+      outline: none;
+      box-shadow: $shadow-verylight;
+      border-bottom: 2px solid $color-primary-light;
+    }
+
+    &:focus:invalid {
+      //ini untuk inform user klo input yang mereka masukkan salah
+      border-bottom: 2px solid red;
+    }
+
+    &::-webkit-input-placeholder {
+      color: $color-grey-dark-2;
+    }
+
+    &::placeholder {
+      font-size: $default-font-size;
+      font-family: inherit;
+      display: inline-block;
+      padding-left: 1rem;
+    }
+  }
+
+  &__label {
+    //font-size: 1.2rem;
+    //font-weight: 100;
+    margin-left: 1rem; //biar posisinya sama dengan text diatasnya
+    margin-top: 0.5rem;
+    display: block;
+    color: $color-grey-dark-2;
+    transition: all 0.3s;
+  }
+
+  &__input:placeholder-shown + &__label {
+    //mereka '+' karena mereka siblings jd bisa di style bersamaan
+    opacity: 0; //ini untuk tulisan kecil
+    visibility: hidden;
+    transform: translateY(-4rem);
+  }
+}
+
+///////////////////////////////////////////////////////////////////////////////////
+.sampleForm,
+.quoteForm {
+  /*button {
+        margin: 0 auto;
+    }*/
+
+  &__container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
+.formDetail {
+  p {
+    font-size: 3.5rem;
+    color: $color-primary-light;
+    letter-spacing: 1px;
+  }
+}
+
+.formSample {
+  width: 40%;
+  border-radius: 3px;
+  box-shadow: $shadow-ultralight;
+
+  button {
+    margin: 2rem 0;
+  }
+}

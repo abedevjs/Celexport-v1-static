@@ -1,0 +1,87 @@
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;    
+        clear: both;
+    }
+}
+
+//1em = 16px
+@mixin respond($breakpoint) {
+    @if $breakpoint == xs-phone {
+      @media only screen and (max-width: 20.62em) {// 330px/16px = 20.625em
+        //330px
+        @content;
+      }
+    }
+  /////////////////////////////////////////////////////////////////////////////////////////// 
+    @if $breakpoint == small-phone {
+      @media only screen and (max-width: 25em) {// 400px/16px = 25em
+        //400px
+        @content;
+      }
+    }
+ 
+    @if $breakpoint == phone {
+      @media only screen and (max-width: 37.5em) {// 600px/16px = 37.5em
+        //600px
+        @content;
+      }
+    }
+  
+    @if $breakpoint == phone-land {
+      @media only screen and (max-width: 43.75em) {// 700px/16px = 43.75em
+        //700px
+        @content;
+      }
+    }
+  
+    @if $breakpoint == tab-port {
+      @media only screen and (max-width: 56.25em) {// 900px/16px = 56.25em
+        //900px
+        @content;
+      }
+    }
+    @if $breakpoint == tab-land {
+      @media only screen and (max-width: 62.5em) {// 1000px/16px = 62.5em
+        //1000px
+        @content;
+      }
+    }
+    @if $breakpoint == desktop {
+      @media only screen and (max-width: 75em) {// 1200px/16px = 75em
+        //1200px
+        @content;
+      }
+    }
+  
+    @if $breakpoint == big-desktop {
+      @media only screen and (min-width: 112.5em) {// 1400/16px = 112.5em
+        //1400px
+        @content;
+      }
+    }
+  
+    @if $breakpoint == xl-desktop {
+      @media only screen and (min-width: 112.5em) {// 1800px/16px = 112.5em
+        //1700px
+        @content;
+      }
+    }
+/////////////////////////////////////////////////////////////////////////////////////////////////     
+    @if $breakpoint == xxl-desktop {
+      @media only screen and (max-width: 137.8em) {// 1900px/16px = 118.75
+        //1900px
+        @content;
+      }
+    }
+ 
+}
+
+/*
+
+@include respond(small-phone) {
+    
+}
+
+*/

@@ -1,0 +1,196 @@
+.statistic {
+  //margin-top: 1;
+  //background-image: linear-gradient(to top, $color-white, $color-secondary-verylight);
+  //background-image: radial-gradient( $color-white, $color-secondary-verylight);
+
+  //display: flex;
+  //justify-content: space-between;
+  //align-items: center;
+}
+
+.about {
+  margin-top: 10rem;
+  //background-color: #eff3c6;
+
+  @include respond(desktop) {
+    //1200px/75em. 9px/16px = 56.25%
+    margin-top: 5rem;
+  }
+
+  @include respond(phone) {
+    //600px/37.5em. 5px/16px = 31.25%
+    margin-top: 4rem;
+  }
+
+  @include respond(small-phone) {
+    //400px/25em. 4px/16px = 25%
+    margin-top: 3rem;
+  }
+
+  &__container {
+    /*
+        //background-image: linear-gradient(26deg, rgba($color-primary-light, .9) 0%, rgba($color-primary-verylight, .9) 40%, transparent 60%);
+        background-color: #eff3c6;
+        background-image: linear-gradient(to top, $color-primary-light, $color-grey-light-1 50%);
+        
+        padding: 7rem 0;
+        border-radius: 3px;
+        */
+  }
+}
+
+.story {
+  margin-top: 5rem;
+  padding: 5rem 0 8rem 0;
+  //background-color: $color-background-light;
+  //background-image: radial-gradient( $color-white, $color-secondary-verylight);
+
+  @include respond(desktop) {
+    //1200px/75em. 9px/16px = 56.25%
+    padding: 4rem 0;
+  }
+
+  @include respond(phone) {
+    //600px/37.5em
+    margin-top: 1rem;
+    padding: 3rem 0;
+  }
+
+  @include respond(small-phone) {
+    //400px/25em. 4px/16px = 25%
+    padding: 2rem 0;
+  }
+}
+
+.product {
+  margin-top: 6rem;
+  padding: 3rem 0;
+
+  @include respond(desktop) {
+    //1200px/75em. 9px/16px = 56.25%
+    padding: 1rem 0;
+  }
+
+  @include respond(phone) {
+    //600px/37.5em
+    margin-top: 5rem;
+    padding: 1rem 0;
+  }
+
+  &__container {
+    margin: 0 auto;
+    width: 90%;
+    box-shadow: $shadow-ultralight;
+    border-radius: 3px;
+    padding: 2rem;
+    background-color: $color-white;
+  }
+}
+
+.activities {
+  margin-top: 6rem;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.procedure {
+  margin-top: 5rem;
+  padding: 5rem 0;
+  //background-color: $color-background-light;
+
+  @include respond(desktop) {
+    //1200px/75em. 9px/16px = 56.25%
+    padding: 3rem 0;
+  }
+
+  @include respond(phone) {
+    //600px/37.5em
+    padding: 0;
+  }
+}
+
+.terms {
+  margin-top: 5rem;
+  padding: 5rem 0;
+
+  @include respond(desktop) {
+    //1200px/75em. 9px/16px = 56.25%
+    padding: 1rem 0;
+  }
+
+  @include respond(tab-port) {
+    //900px/56.25em. 7px/16px = 43.75%
+    margin-top: 4rem;
+  }
+
+  @include respond(phone) {
+    //600px/37.5em. 5px/16px = 31.25%
+    margin-top: 3rem;
+    padding: 1rem 0;
+  }
+
+  @include respond(small-phone) {
+    //400px/25em. 4px/16px = 25%
+    margin-top: 2rem;
+  }
+}
+
+.contact {
+  margin-top: 5rem;
+  padding: 5rem 0;
+  //background-color: $color-background-light;
+
+  @include respond(desktop) {
+    //1200px/75em. 9px/16px = 56.25%
+    margin-top: 4rem;
+  }
+
+  @include respond(tab-port) {
+    //900px/56.25em. 7px/16px = 43.75%
+    padding: 0;
+  }
+
+  @include respond(phone) {
+    //600px/37.5em. 5px/16px = 31.25%
+    margin-top: 3rem;
+  }
+
+  &__container {
+    //background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-verylight);
+    //background-image: linear-gradient(to bottom, $color-primary-light, $color-grey-light-1 50%);
+    //background-color: $color-background-light;
+    //padding: 7rem 0;
+    border-radius: 3px;
+  }
+}
+
+.partners {
+  margin-bottom: 2rem;
+  justify-content: space-evenly;
+  // padding-bottom: 4rem;
+
+  display: flex;
+
+  @include respond(phone) {
+    //1200px/75em. 9px/16px = 56.25%
+    margin-top: 3.5rem;
+  }
+
+  img {
+    height: 10rem;
+    width: auto;
+
+    @include respond(desktop) {
+      //1200px/75em. 9px/16px = 56.25%
+      height: 8rem;
+    }
+
+    @include respond(phone) {
+      //600px/37.5em. 5px/16px = 31.25%
+      height: 7rem;
+    }
+  }
+}

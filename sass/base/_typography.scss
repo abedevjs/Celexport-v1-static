@@ -1,0 +1,76 @@
+body {
+  font-family: 'Lato', sans-serif, serif;
+  /* font-size: 16px; */
+  font-weight: 400;
+  color: $color-grey-dark;
+  line-height: 1.7; /* 1.7 bigger than predefined without this */
+  //padding: 2rem; /* padding will get inheritance if only specified with 1 format size */
+}
+
+h2 {
+  display: block;
+  color: $color-primary-light;
+  font-size: 3.5rem;
+  letter-spacing: 0.5rem;
+  font-weight: 500;
+}
+
+/*
+h2:after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: $color-primary-light;
+    width: 10rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+*/
+
+h3 {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 300;
+  //letter-spacing: 0.5rem;
+  color: $color-primary-light;
+
+  @include respond(phone) {
+    //600px/37.5em. 5px/16px = 31.25%
+    font-size: 2.5rem;
+  }
+
+  @include respond(small-phone) {
+    //400px/25em. 4px/16px = 25%
+    font-size: 2rem;
+  }
+}
+
+.heading-4 {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+
+  &--blue {
+    color: $color-primary-light;
+  }
+
+  &--black {
+    color: $color-black;
+  }
+}
+
+.heading-5 {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+
+  &--blue {
+    color: $color-primary-light;
+  }
+
+  &--black {
+    color: $color-black;
+  }
+}
